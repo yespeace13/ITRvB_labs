@@ -1,24 +1,14 @@
 <?php
-
 /**
  * Продукт не имеющий физического представления
  */
 class PhysicalProduct extends Product
 {
-    /**
-     * @var int Количество
-     */
     private int $count;
 
-    /**
-     * @return bool Проверка для наличия продукции
-     */
-    public function isExist()
+    public function calculateCost(): float
     {
-        if ($this->count != 0) {
-            return true;
-        }
-        return false;
+        return $this->price * $this->count;
     }
 
     public function getCount(): int
