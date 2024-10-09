@@ -3,7 +3,7 @@
 /**
  * Продукт
  */
-class Product
+abstract class Product
 {
     /**
      * @var int Идентификатор

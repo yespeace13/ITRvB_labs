@@ -3,10 +3,10 @@
 /**
  * Пользователь
  */
-class User
+abstract class User
 {
     /**
-     * @var Идентификатор
+     * @var int Идентификатор
      */
     private int $id;
     /**
@@ -30,12 +30,4 @@ class User
      */
     private ?string $phone;
 
-    public function __construct($id, $firstName, $lastName, $email, $address, $phone){
-        $this->id = $id;
-        $this->firstName = $firstName;
-        $this->lastName = $lastName;
-        $this->email = $email;
-        $this->address = $address;
-        $this->phone = $phone;
-    }
 }

@@ -5,10 +5,11 @@
  */
 class Review
 {
+    private int $id;
     /**
      * @var Product Продукт, на который оставили отзыв
      */
-    private Product $_product;
+    private Product $product;
     /**
      * @var string Отзыв
      */
@@ -18,8 +19,8 @@ class Review
      */
     private int $rating;
     /**
-     * @var User Пользователь, оставивший отзыв
+     * @var Client Пользователь, оставивший отзыв
      */
-    private User $user;
+    private Client $client;
 
 }
